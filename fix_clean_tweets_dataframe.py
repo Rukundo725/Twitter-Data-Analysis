@@ -1,6 +1,10 @@
+import pandas as pd
+
 class Clean_Tweets:
     """
-    The PEP8 Standard AMAZING!!!
+   
+   
+   The PEP8 Standard AMAZING!!!
     """
     def __init__(self, df:pd.DataFrame):
         self.df = df
@@ -41,7 +45,7 @@ class Clean_Tweets:
         convert columns like polarity, subjectivity, retweet_count
         favorite_count etc to numbers
         """
-        df['polarity'] = pd.----
+        df['polarity'] = pd.
         
         ----
         ----
