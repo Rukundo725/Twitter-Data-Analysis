@@ -2,7 +2,7 @@ import json
 import pandas as pd
 from textblob import TextBlob
 
-def read_json(json_file: str)->list:
+def read_json(covid19: str)->list:
     """
     json file reader to open and read json files into a list
     Args:
@@ -15,11 +15,15 @@ def read_json(json_file: str)->list:
     """
     
     tweets_data = []
-    for tweets in open(json_file,'r'):
+    for tweets in open('data/covid19.json','r'):
         tweets_data.append(json.loads(tweets))
-    
+#         print(tweets_data)
+            
     
     return len(tweets_data), tweets_data
+
+# a=read_json('covid19')
+# print(a) tweets_data
 
 class TweetDfExtractor:
     """
